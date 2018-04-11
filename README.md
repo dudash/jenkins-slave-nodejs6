@@ -9,8 +9,10 @@ Build it yourself or try using the Dockerhub version.
 This is targeted towards OpenShift 3.7 and later, RHEL7, and Node.js 6.
 
 ## Using this image
-TBD setup Jenkins Kubernetes plugin
-TBD pipeline step example
+Assuming you already have an OpenShift cluster up and running and a Jenkins pipeline setup.  We need to:
+* Get the image into your cluster
+* TBD setup Jenkins Kubernetes plugin
+* TBD pipeline step example
 
 ## References
 If you want to read more about that Jenkins slave builder images see below links.
