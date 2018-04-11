@@ -1,4 +1,4 @@
-# This is copied from here:
+# This Dockerfile was copied from:
 # https://github.com/openshift/jenkins/blob/master/slave-nodejs/Dockerfile.rhel7
 # originally on April 11th, 2018
 # THE REAL MAINTAINER Ben Parees <bparees@redhat.com>
