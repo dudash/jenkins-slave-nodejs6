@@ -4,7 +4,7 @@
 # THE REAL MAINTAINER Ben Parees <bparees@redhat.com>
 
 FROM registry.access.redhat.com/openshift3/jenkins-slave-base-rhel7
-MAINTAINER Jason Dudash <jdudash@redhat.com>
+MAINTAINER Jason Dudash <jason.dudash@gmail.com>
 
 # Labels consumed by Red Hat build service
 LABEL com.redhat.component="jenkins-slave-nodejs6-rhel7-docker" \
