@@ -3,7 +3,7 @@ Project for creating a Node.js 6 based Jenkins Slave container image (for use in
 
 <img src="https://www.openshift.com/images/logos/openshift/Logotype_RH_OpenShift_wLogo_RGB_Gray.svg" alt="OCP logo" height="70" >
 
-Build it yourself or try using the Dockerhub version.
+Build it yourself or try using the Dockerhub version (tag `latest` is CentOS, tag 'rhel7-latest' is Red Hat E.Linux).
 
 [![docker hub stats](http://dockeri.co/image/dudash/jenkins-slave-nodejs6)](https://hub.docker.com/r/dudash/jenkins-slave-nodejs6/)
 
@@ -51,3 +51,8 @@ For OpenShift Origin:
 For the production version - OpenShift Container Platform:
 * https://docs.openshift.com/container-platform/3.9/using_images/other_images/jenkins_slaves.html
 
+The upstream official source for these images that eventually goes into OpenShift:
+* https://github.com/openshift/jenkins/tree/master/agent-nodejs-8
+
+Upstream built image (which I think is currently nodejs8):
+* https://hub.docker.com/r/openshift/jenkins-slave-nodejs-centos7/
