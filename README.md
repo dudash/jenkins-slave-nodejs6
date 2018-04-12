@@ -4,7 +4,7 @@ Project for creating a Node.js 6 based Jenkins Slave container image (for use in
 
 Build it yourself or try using the Dockerhub version.
 
-[![docker hub stats](http://dockeri.co/image/dudash/jenkins-slave-nodejs6-rhel7)](https://hub.docker.com/r/dudash/jenkins-slave-nodejs6-rhel7/)
+[![docker hub stats](http://dockeri.co/image/dudash/jenkins-slave-nodejs6)](https://hub.docker.com/r/dudash/jenkins-slave-nodejs6/)
 
 ## Versions available
 This is targeted towards OpenShift 3.7 and later, RHEL7, and Node.js 6.
