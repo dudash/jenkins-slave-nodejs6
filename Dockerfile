@@ -28,10 +28,8 @@ COPY contrib/bin/scl_enable /usr/local/bin/scl_enable
 # Install NodeJS
 RUN yum-config-manager --enable rhel-server-rhscl-7-rpms && \    
     yum-config-manager --enable rhel-7-server-optional-rpms && \
-    yum-config-manager --enable rhel-server-rhscl-8-rpms && \ 
-    yum-config-manager --enable rhel-8-server-optional-rpms && \
     yum-config-manager --disable epel >/dev/null || : && \
-    INSTALL_PKGS="rh-nodejs${NODEJS_VERSION} rh-nodejs${NODEJS_VERSION}-nodejs-nodemon" && \
+    INSTALL_PKGS="rh-nodejs6 rh-nodejs6-nodejs-nodemon" && \
     ln -s /usr/lib/node_modules/nodemon/bin/nodemon.js /usr/bin/nodemon && \
     yum install -y --setopt=tsflags=nodocs $INSTALL_PKGS && \
     rpm -V $INSTALL_PKGS && \
