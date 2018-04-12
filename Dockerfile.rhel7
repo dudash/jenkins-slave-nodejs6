@@ -11,9 +11,9 @@ LABEL com.redhat.component="jenkins-slave-nodejs6-rhel7-docker" \
       name="openshift3/jenkins-slave-nodejs6-rhel7" \
       version="3.6" \
       architecture="x86_64" \
-      release="4" \
-      io.k8s.display-name="Jenkins Slave Nodejs6" \
-      io.k8s.description="The jenkins slave nodejs6 image has the nodejs tools on top of the jenkins slave base image." \
+      release="6" \
+      io.k8s.display-name="Jenkins Slave Nodejs" \
+      io.k8s.description="The jenkins slave nodejs image has the nodejs tools on top of the jenkins slave base image." \
       io.openshift.tags="openshift,jenkins,slave,nodejs"
 
 ENV NODEJS_VERSION=6 \
@@ -28,8 +28,10 @@ COPY contrib/bin/scl_enable /usr/local/bin/scl_enable
 # Install NodeJS
 RUN yum-config-manager --enable rhel-server-rhscl-7-rpms && \    
     yum-config-manager --enable rhel-7-server-optional-rpms && \
+    yum-config-manager --enable rhel-server-rhscl-8-rpms && \ 
+    yum-config-manager --enable rhel-8-server-optional-rpms && \
     yum-config-manager --disable epel >/dev/null || : && \
-    INSTALL_PKGS="rh-nodejs6 rh-nodejs6-npm rh-nodejs6-nodejs-nodemon" && \
+    INSTALL_PKGS="rh-nodejs${NODEJS_VERSION} rh-nodejs${NODEJS_VERSION}-nodejs-nodemon" && \
     ln -s /usr/lib/node_modules/nodemon/bin/nodemon.js /usr/bin/nodemon && \
     yum install -y --setopt=tsflags=nodocs $INSTALL_PKGS && \
     rpm -V $INSTALL_PKGS && \
