@@ -7,7 +7,7 @@ Build it yourself or try using the Dockerhub version.
 [![docker hub stats](http://dockeri.co/image/dudash/jenkins-slave-nodejs6)](https://hub.docker.com/r/dudash/jenkins-slave-nodejs6/)
 
 ## Versions available
-This is targeted towards OpenShift 3.7 and later, RHEL7, and Node.js 6.
+This is targeted towards OpenShift 3.7 and later, CentOS/RHEL7, and Node.js 6.
 
 ## Using this image
 Assuming you already have an OpenShift cluster up and running and a Jenkins pipeline setup.  You need to:
@@ -43,7 +43,7 @@ Assuming you already have an OpenShift cluster up and running and a Jenkins pipe
     ```
 
 ## References
-If you want to read more about that Jenkins slave builder images see below links.
+If you want to read more about the Jenkins slave builder images see below links.
 
 For OpenShift Origin:
 * https://docs.openshift.org/latest/using_images/other_images/jenkins.html#using-the-jenkins-kubernetes-plug-in-to-run-jobs
