@@ -1,5 +1,6 @@
 # Jenkins Slave to build Node.js 6 apps (CentOS/RHEL7 based)
 Project for creating a Node.js 6 based Jenkins Slave container image (for use in OpenShift).
+
 <img src="https://www.openshift.com/images/logos/openshift/Logotype_RH_OpenShift_wLogo_RGB_Gray.svg" alt="OCP logo" height="70" >
 
 Build it yourself or try using the Dockerhub version.
@@ -10,8 +11,8 @@ Build it yourself or try using the Dockerhub version.
 This is targeted towards OpenShift 3.7 and later, CentOS/RHEL7, and Node.js 6.
 
 ## Using this image
-Assuming you already have an OpenShift cluster up and running and a Jenkins pipeline setup.  You need to:
-1. Update the Jenkins Kubernetes plugin to reference the builder image.  In ```Jenkins->Manage Jenkins->Configure System```. Then look in ```Cloud->Kubernetes->Kubernetes Pod Template```.  Depending on where your container image lives, the new setup should look something like this:
+Assuming you already have an OpenShift cluster up and running and your Jenkins pipeline setup.  You need to:
+1. Update the Jenkins Kubernetes plugin to reference the builder image.  Open your Jenkins webconsole and in ```Jenkins->Manage Jenkins->Configure System```. Then look in ```Cloud->Kubernetes->Kubernetes Pod Template```.  Depending on where your container image lives, the new setup should look something like this:
 
 ![Screenshot](./.screens/jenkins-plugin.png?raw=true)
 
