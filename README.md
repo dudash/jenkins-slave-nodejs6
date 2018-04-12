@@ -33,7 +33,7 @@ Assuming you already have an OpenShift cluster up and running and a Jenkins pipe
     or with the older syntax:
     
     ```
-    node('nodejs') {
+    node('nodejs6') {
         stage('build') {
             openshiftBuild(buildConfig: '${NAME}', showBuildLogs: 'true')
         }
