@@ -1,4 +1,4 @@
-# Jenkins Slave to build Node.js 6 apps (RHEL7 based)
+# Jenkins Slave to build Node.js 6 apps (CentOS/RHEL7 based)
 Project for creating a Node.js 6 based Jenkins Slave container image (for use in OpenShift).
 <img src="https://www.openshift.com/images/logos/openshift/Logotype_RH_OpenShift_wLogo_RGB_Gray.svg" alt="OCP logo" height="70" >
 
