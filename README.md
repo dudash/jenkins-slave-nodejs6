@@ -37,9 +37,8 @@ Assuming you already have an OpenShift cluster up and running and a Jenkins pipe
         stage('build') {
             openshiftBuild(buildConfig: '${NAME}', showBuildLogs: 'true')
         }
+        
         [OTHER STAGES...]
-    }
-
     ```
 
 ## References
