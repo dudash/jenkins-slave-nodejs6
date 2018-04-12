@@ -42,6 +42,9 @@ Assuming you already have an OpenShift cluster up and running and your Jenkins p
         [OTHER STAGES...]
     ```
 
+## Need a pipeline to test this out on?
+[Try this one](https://github.com/dudash/openshiftexamples-cicdpipeline)
+
 ## References
 If you want to read more about the Jenkins slave builder images see below links.
 
